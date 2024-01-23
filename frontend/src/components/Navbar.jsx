@@ -18,7 +18,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="col-span-1 flex items-center">
-        <button className="bg-[#00baf2] rounded-3xl p-2 m-2 cursor-pointer text-[#fff] font-semibold">
+        <button className="bg-[#00baf2] rounded-3xl px-6 py-2 m-2 cursor-pointer text-[#fff] font-semibold">
           Sign In
         </button>
       </div>
