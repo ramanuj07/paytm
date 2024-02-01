@@ -1,12 +1,23 @@
 import "./App.css";
 import Body from "./components/Body";
-import Navbar from "./components/Navbar";
+import Login from "./components/Login";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 function App() {
+  const appRouter = createBrowserRouter([
+    {
+      path: "/",
+      element: <Body />,
+    },
+    {
+      path: "/signin",
+      element: <Login />,
+    },
+  ]);
+
   return (
     <div>
-      <Navbar />
-      <Body />
+      <RouterProvider router={appRouter} />
     </div>
   );
 }
